@@ -26,7 +26,7 @@ router.route('/list')
       .get( async (req: Request, res: Response) => {
             const tasksList = await Task.find().lean();
             console.log(tasksList)
-            res.render('tasks/list', { tasksList });
+            res.status(200).render('tasks/list', { tasksList });
        })
 
 router.route('/delete/:id')

@@ -8,6 +8,7 @@ import index from './routes/index.routes';
 
 import tasks from './routes/tasks.routes';
 
+
 class Application {
 
     app: express.Application;
@@ -18,6 +19,7 @@ class Application {
         this.middlewares();
         this.routes();
     }
+    
     settings() {
         this.app.set('port', 3000);
         this.app.set('views', path.join(__dirname, 'views'));
