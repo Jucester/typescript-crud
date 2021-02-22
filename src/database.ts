@@ -3,7 +3,7 @@ import mongoose from 'mongoose';
 export default async function connect() {
 
     try {
-        await mongoose.connect('mongodb://localhost/ts-crud', {
+        await mongoose.connect('mongodb://mongo/ts-crud', {
             useNewUrlParser: true,
             useUnifiedTopology: true
         });
